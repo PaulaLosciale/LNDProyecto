@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concesionario>
+<concesionario>
+    <vehiculo>
+        <matricula>ABC-1234</matricula>
+        <marca>Toyota</marca>
+        <modelo>Corolla</modelo>
+        <anioFabricacion>2020</anioFabricacion>
+        <precio>18500.99</precio>
+    </vehiculo>
+</concesionario>
