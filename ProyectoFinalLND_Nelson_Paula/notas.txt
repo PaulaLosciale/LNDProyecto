@@ -1,1 +1,0 @@
-hacer un xml para los compradores, otro para los vendedores, otro par los pedidos y otro para los coches

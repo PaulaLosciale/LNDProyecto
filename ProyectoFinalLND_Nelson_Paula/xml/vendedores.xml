@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concesionario>
+    <vendedores>
+        <vendedor>
+            <id>VD-001</id>
+            <nombre>Carlos López</nombre>
+            <dni>11223344C</dni>
+            <telefono>600112233</telefono>
+            <email>carlos@concesionario.com</email>
+            <ventas_mes>5</ventas_mes>
+            <comision>1250.00</comision>
+        </vendedor>
+        <vendedor>
+            <id>VD-002</id>
+            <nombre>Ana Martínez</nombre>
+            <dni>44332211D</dni>
+            <telefono>600443322</telefono>
+            <email>ana@concesionario.com</email>
+            <ventas_mes>8</ventas_mes>
+            <comision>2100.00</comision>
+        </vendedor>
+    </vendedores>
+    <fecha_actualizacion>2025-05-03</fecha_actualizacion>
+</concesionario>

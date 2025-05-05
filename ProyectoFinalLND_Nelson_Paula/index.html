@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concesionario - Gestor de Documentos</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <h1><i class="fas fa-car"></i> Concesionario Premium</h1>
+        <p>Sistema de gestión de documentos XML</p>
+      </header>
+
+      <section class="document-section">
+        <h2><i class="fas fa-file-alt"></i> Documentos Disponibles</h2>
+
+        <div class="document-table">
+          <div class="table-header">
+            <div class="header-cell">Fecha</div>
+            <div class="header-cell">Tipo</div>
+            <div class="header-cell">Referencia</div>
+            <div class="header-cell">Archivo</div>
+            <div class="header-cell">Detalles</div>
+            <div class="header-cell">Acciones</div>
+          </div>
+
+          <!-- Ejemplo de fila de documento -->
+          <div class="table-row">
+            <div class="table-cell">01/05/2025</div>
+            <div class="table-cell">Vehículos</div>
+            <div class="table-cell">VH-001</div>
+            <div class="table-cell">vehiculos.xml</div>
+            <div class="table-cell">
+              <a
+                href="viewer.html?file=xml/vehiculos.xml&type=Vehículos"
+                class="btn view-btn"
+              >
+                <i class="fas fa-eye"></i> Ver más
+              </a>
+            </div>
+            <div class="table-cell">
+              <a href="xml/vehiculos.xml" download class="btn download-btn">
+                <i class="fas fa-download"></i> Descargar
+              </a>
+            </div>
+          </div>
+
+          <!-- Más documentos... -->
+        </div>
+      </section>
+    </div>
+
+    <footer class="main-footer">
+      <p>Sistema desarrollado para el módulo de Lenguajes de Marca</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

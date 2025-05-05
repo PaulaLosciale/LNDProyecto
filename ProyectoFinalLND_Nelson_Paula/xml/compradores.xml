@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concesionario>
+    <compradores>
+        <comprador>
+            <id>CP-001</id>
+            <nombre>Juan Pérez</nombre>
+            <dni>12345678A</dni>
+            <telefono>600123456</telefono>
+            <email>juan@example.com</email>
+            <vehiculos_comprados>
+                <vehiculo>VH-005</vehiculo>
+                <vehiculo>VH-012</vehiculo>
+            </vehiculos_comprados>
+        </comprador>
+        <comprador>
+            <id>CP-002</id>
+            <nombre>María García</nombre>
+            <dni>87654321B</dni>
+            <telefono>600654321</telefono>
+            <email>maria@example.com</email>
+            <vehiculos_comprados>
+                <vehiculo>VH-008</vehiculo>
+            </vehiculos_comprados>
+        </comprador>
+    </compradores>
+    <fecha_actualizacion>2025-05-02</fecha_actualizacion>
+</concesionario>
