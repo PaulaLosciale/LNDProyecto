@@ -3,45 +3,54 @@
     <xsl:output method="html" indent="yes"/>
     
     <xsl:template match="/">
-        <div class="document-container">
-            <div class="document-header">
-                <h2><i class="fas fa-clipboard-list"></i> Historial de Pedidos</h2>
-                <div class="document-meta">
-                    <span><i class="fas fa-calendar"></i> Fecha actualización: <xsl:value-of select="concesionario/fecha_actualizacion"/></span>
-                    <span><i class="fas fa-list-ol"></i> Total pedidos: <xsl:value-of select="count(concesionario/pedidos/pedido)"/></span>
-                </div>
+        <div class="order-container">
+            <h2><i class="fas fa-clipboard-list"></i> Detalles de Pedidos</h2>
+            
+            <div class="doc-info">
+                <p><strong>Fecha actualización:</strong> <xsl:value-of select="concesionario/fecha_actualizacion"/></p>
             </div>
             
-            <table class="professional-table">
-                <thead>
-                    <tr>
-                        <th>ID Pedido</th>
-                        <th>Fecha</th>
-                        <th>Vehículo</th>
-                        <th>Comprador</th>
-                        <th>Vendedor</th>
-                        <th>Precio</th>
-                        <th>Estado</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <xsl:for-each select="concesionario/pedidos/pedido">
-                        <tr>
-                            <td><xsl:value-of select="id"/></td>
-                            <td><xsl:value-of select="fecha"/></td>
-                            <td><xsl:value-of select="vehiculo"/></td>
-                            <td><xsl:value-of select="comprador"/></td>
-                            <td><xsl:value-of select="vendedor"/></td>
-                            <td class="price"><xsl:value-of select="format-number(precio_final, '#,##0.00')"/> €</td>
-                            <td>
-                                <span class="status-{translate(estado, 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')}">
-                                    <xsl:value-of select="estado"/>
+            <div class="order-list">
+                <xsl:for-each select="concesionario/pedidos/pedido">
+                    <div class="order-card">
+                        <div class="order-header">
+                            <h3>Pedido <xsl:value-of select="id"/></h3>
+                            <span class="order-status" data-status="{estado}">
+                                <xsl:value-of select="estado"/>
+                            </span>
+                        </div>
+                        
+                        <div class="order-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Fecha:</span>
+                                <span class="detail-value"><xsl:value-of select="fecha"/></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Vehículo:</span>
+                                <span class="detail-value vehicle"><xsl:value-of select="vehiculo"/></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Comprador:</span>
+                                <span class="detail-value customer"><xsl:value-of select="comprador"/></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Vendedor:</span>
+                                <span class="detail-value seller"><xsl:value-of select="vendedor"/></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Precio final:</span>
+                                <span class="detail-value price">
+                                    <xsl:value-of select="format-number(precio_final, '#,##0.00')"/> €
                                 </span>
-                            </td>
-                        </tr>
-                    </xsl:for-each>
-                </tbody>
-            </table>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Método de pago:</span>
+                                <span class="detail-value payment"><xsl:value-of select="metodo_pago"/></span>
+                            </div>
+                        </div>
+                    </div>
+                </xsl:for-each>
+            </div>
         </div>
     </xsl:template>
 </xsl:stylesheet>

@@ -19,6 +19,24 @@
             <ventas_mes>8</ventas_mes>
             <comision>2100.00</comision>
         </vendedor>
+        <vendedor>
+            <id>VD-003</id>
+            <nombre>Miguel Sánchez</nombre>
+            <dni>55667788E</dni>
+            <telefono>600556677</telefono>
+            <email>miguel@concesionario.com</email>
+            <ventas_mes>12</ventas_mes>
+            <comision>3200.00</comision>
+        </vendedor>
+        <vendedor>
+            <id>VD-004</id>
+            <nombre>Laura Torres</nombre>
+            <dni>99887766F</dni>
+            <telefono>600998877</telefono>
+            <email>laura@concesionario.com</email>
+            <ventas_mes>6</ventas_mes>
+            <comision>1500.00</comision>
+        </vendedor>
     </vendedores>
     <fecha_actualizacion>2025-05-03</fecha_actualizacion>
 </concesionario>

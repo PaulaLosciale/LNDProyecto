@@ -33,7 +33,10 @@ function loadAndTransformXML(xmlPath, xmlType) {
     '<div class="loading"><i class="fas fa-spinner fa-spin"></i> Cargando documento...</div>';
 
   // Determinar archivo XSL
-  const xslFile = `xslt/${xmlType.toLowerCase()}.xsl`;
+  const xslFile = `xslt/${xmlType
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")}.xsl`;
 
   Promise.all([
     fetch(xmlPath).then((res) => res.text()),

@@ -22,6 +22,28 @@
                 <vehiculo>VH-008</vehiculo>
             </vehiculos_comprados>
         </comprador>
+        <comprador>
+            <id>CP-003</id>
+            <nombre>Carlos Rodríguez</nombre>
+            <dni>23456789C</dni>
+            <telefono>600789012</telefono>
+            <email>carlos@example.com</email>
+            <vehiculos_comprados>
+                <vehiculo>VH-003</vehiculo>
+                <vehiculo>VH-007</vehiculo>
+                <vehiculo>VH-015</vehiculo>
+            </vehiculos_comprados>
+        </comprador>
+        <comprador>
+            <id>CP-004</id>
+            <nombre>Ana Martínez</nombre>
+            <dni>34567890D</dni>
+            <telefono>600345678</telefono>
+            <email>ana@example.com</email>
+            <vehiculos_comprados>
+                <vehiculo>VH-001</vehiculo>
+            </vehiculos_comprados>
+        </comprador>
     </compradores>
     <fecha_actualizacion>2025-05-02</fecha_actualizacion>
 </concesionario>

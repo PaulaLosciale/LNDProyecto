@@ -21,6 +21,26 @@
             <estado>Procesando</estado>
             <metodo_pago>Transferencia</metodo_pago>
         </pedido>
+        <pedido>
+            <id>PD-003</id>
+            <fecha>2025-05-03</fecha>
+            <comprador>CP-003</comprador>
+            <vendedor>VD-003</vendedor>
+            <vehiculo>VH-003</vehiculo>
+            <precio_final>28500.00</precio_final>
+            <estado>Entregado</estado>
+            <metodo_pago>Efectivo</metodo_pago>
+        </pedido>
+        <pedido>
+            <id>PD-004</id>
+            <fecha>2025-05-04</fecha>
+            <comprador>CP-004</comprador>
+            <vendedor>VD-004</vendedor>
+            <vehiculo>VH-004</vehiculo>
+            <precio_final>52000.00</precio_final>
+            <estado>Pendiente</estado>
+            <metodo_pago>Financiación</metodo_pago>
+        </pedido>
     </pedidos>
     <fecha_actualizacion>2025-05-04</fecha_actualizacion>
 </concesionario>

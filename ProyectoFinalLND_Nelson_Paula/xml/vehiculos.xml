@@ -3,11 +3,59 @@
     <vehiculos>
         <vehiculo>
             <matricula>ABC-1234</matricula>
-            <marca>Toyota</marca>
-            <modelo>Corolla</modelo>
-            <anioFabricacion>2020</anioFabricacion>
-            <precio>18500.99</precio>
+            <marca>Mercedes-Maybach</marca>
+            <modelo> S</modelo>
+            <anioFabricacion>2024</anioFabricacion>
+            <kilometraje>0</kilometraje>
+            <combustible>Híbrido enchufable</combustible>
+            <potencia>680</potencia>
+            <garantia>3 años</garantia>
+            <precio>195000.00</precio>
             <disponible>true</disponible>
+            <imagen>img/Mercedes-Maybach Clase S.jpg</imagen>
+            <web>https://www.mercedes-benz.es/passengercars/models/saloon-long/maybach-s-class/overview.html?srsltid=AfmBOoozWM7wQ3NSigvDgq4YTBsPzBNmQVqEsxDxChf0Rp4-kqMCtYQ9#exterior</web>
+        </vehiculo>
+        <vehiculo>
+            <matricula>DEF-5678</matricula>
+            <marca>Bentley</marca>
+            <modelo> Flying Spur</modelo>
+            <anioFabricacion>2024</anioFabricacion>
+            <kilometraje>0</kilometraje>
+            <combustible>Gasolina</combustible>
+            <potencia>635</potencia>
+            <garantia>3 años</garantia>
+            <precio>225000.00</precio>
+            <disponible>true</disponible>
+            <imagen>img/Bentley Flying Spur.jpg</imagen>
+            <web>https://barcelona.bentleymotors.com/eu/es/bentley/info/flying-spur</web>
+        </vehiculo>
+        <vehiculo>
+            <matricula>GHI-9012</matricula>
+            <marca>Rolls-Royce</marca>
+            <modelo> Ghost</modelo>
+            <anioFabricacion>2024</anioFabricacion>
+            <kilometraje>0</kilometraje>
+            <combustible>Gasolina</combustible>
+            <potencia>571</potencia>
+            <garantia>4 años</garantia>
+            <precio>350000.00</precio>
+            <disponible>true</disponible>
+            <imagen>img/Rolls-Royce Ghost Series II.webp</imagen>
+            <web>https://www.rolls-roycemotorcars.com/en_GB/showroom/ghost-in-detail.html</web>
+        </vehiculo>
+        <vehiculo>
+            <matricula>JKL-3456</matricula>
+            <marca>McLaren</marca>
+            <modelo> 720S</modelo>
+            <anioFabricacion>2024</anioFabricacion>
+            <kilometraje>0</kilometraje>
+            <combustible>Gasolina</combustible>
+            <potencia>720</potencia>
+            <garantia>3 años</garantia>
+            <precio>285000.00</precio>
+            <disponible>true</disponible>
+            <imagen>img/McLaren 720s.jpg</imagen>
+            <web>https://cars.mclaren.com/es-es/super-series/720s</web>
         </vehiculo>
     </vehiculos>
     <fecha_actualizacion>2025-05-01</fecha_actualizacion>
